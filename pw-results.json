@@ -1,0 +1,650 @@
+﻿{
+  "config": {
+    "configFile": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\playwright.config.ts",
+    "rootDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\setup\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "totalTime": 509554.9089999199
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "auth-setup",
+        "name": "auth-setup",
+        "testDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth-setup\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium-auth",
+        "name": "chromium-auth",
+        "testDir": "C:/Users/SKYLINE/Downloads/tau-advanced-playwright-main (1)/tau-advanced-playwright-main",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.35.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\ui\\specs\\book-with-dynamic-pom.spec.ts",
+      "file": "tests/ui/specs/book-with-dynamic-pom.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Books - Dynamic Page Object Model",
+          "file": "tests/ui/specs/book-with-dynamic-pom.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add brand new book",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 60217,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('9781449365035', { exact: true })\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('9781449365035', { exact: true })\u001b[22m\n\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\utils\\zones.js:75:33)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:216:32)\n    at BookPage.checkSpeakingJSIsbn (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\book-page.ts:45:49)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\tests\\ui\\specs\\book-with-dynamic-pom.spec.ts:16:24)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:345:9)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:341:7)",
+                        "location": {
+                          "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\book-page.ts",
+                          "column": 49,
+                          "line": 45
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mtests\\ui\\pages\\book-page.ts:45\n\n  43 |\n  44 |   async checkSpeakingJSIsbn() {\n> 45 |     await expect (this.speakingJSBookIsbnLabel).toBeVisible();\n     |                                                 ^\n  46 |   }\n  47 |\n  48 |   async checkTitle(title: string) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\book-page.ts",
+                            "column": 49,
+                            "line": 45
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('9781449365035', { exact: true })\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests\\ui\\pages\\book-page.ts:45\n\n  43 |\n  44 |   async checkSpeakingJSIsbn() {\n> 45 |     await expect (this.speakingJSBookIsbnLabel).toBeVisible();\n     |                                                 ^\n  46 |   }\n  47 |\n  48 |   async checkTitle(title: string) {\n\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\utils\\zones.js:75:33)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:216:32)\u001b[22m\n\u001b[2m    at BookPage.checkSpeakingJSIsbn (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\book-page.ts:45:49)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\tests\\ui\\specs\\book-with-dynamic-pom.spec.ts:16:24)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:345:9)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:341:7)\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTest finished within timeout of 60000ms, but tearing down \"context\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:27:00.033Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-book-with-dynamic-pom-Books---Dynamic-Page-Object-Model-Add-brand-new-book-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\book-page.ts",
+                        "column": 49,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4e167cc409d4f51689cc-52d6a00acb0d2689148b",
+              "file": "tests/ui/specs/book-with-dynamic-pom.spec.ts",
+              "line": 14,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\book-with-fixture-and-api-isolated-auth.spec.ts",
+      "file": "tests/ui/specs/book-with-fixture-and-api-isolated-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Book - Fixture & API with isolated auth",
+          "file": "tests/ui/specs/book-with-fixture-and-api-isolated-auth.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add duplicate book",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 60063,
+                      "error": {
+                        "message": "\u001b[31mTest finished within timeout of 60000ms, but tearing down \"bookPage\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest finished within timeout of 60000ms, but tearing down \"bookPage\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:27:01.136Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-book-with-fixture-and-api-isola-2d63e-xture-API-with-isolated-auth-Add-duplicate-book-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "db9ebf1c9323e101b149-5c9e89e6b45ad66b4287",
+              "file": "tests/ui/specs/book-with-fixture-and-api-isolated-auth.spec.ts",
+              "line": 30,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\book-with-fixture-and-api.spec.ts",
+      "file": "tests/ui/specs/book-with-fixture-and-api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Books - Fixture & API",
+          "file": "tests/ui/specs/book-with-fixture-and-api.spec.ts",
+          "line": 28,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add brand new book",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 48415,
+                      "error": {
+                        "message": "ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-2\\traces\\49aaf83a47a8c281fe9d-e70da037b42a557f8e15-1.network'",
+                        "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-2\\traces\\49aaf83a47a8c281fe9d-e70da037b42a557f8e15-1.network'\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:343:7)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:431:18)"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-2\\traces\\49aaf83a47a8c281fe9d-e70da037b42a557f8e15-1.network'\n\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:343:7)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:431:18)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:29:53.235Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-book-with-fixture-and-api-Books---Fixture-API-Add-brand-new-book-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "49aaf83a47a8c281fe9d-e70da037b42a557f8e15",
+              "file": "tests/ui/specs/book-with-fixture-and-api.spec.ts",
+              "line": 31,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\login.spec.ts",
+      "file": "tests/ui/specs/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Book Store - Login",
+          "file": "tests/ui/specs/login.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "successfull login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 60055,
+                      "error": {
+                        "message": "ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-3\\traces\\b32d3b55de9d8f611a43-22d7823be28b4999467e.network'",
+                        "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-3\\traces\\b32d3b55de9d8f611a43-22d7823be28b4999467e.network'\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:343:7)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:431:18)"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\.playwright-artifacts-3\\traces\\b32d3b55de9d8f611a43-22d7823be28b4999467e.network'\n\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:343:7)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\server\\trace\\recorder\\tracing.js:431:18)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:30:56.405Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b32d3b55de9d8f611a43-22d7823be28b4999467e",
+              "file": "tests/ui/specs/login.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "failing login - invalid username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:33:10.840Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b32d3b55de9d8f611a43-1a29a0929b2867ff8dde",
+              "file": "tests/ui/specs/login.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "failing login - invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:33:10.840Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b32d3b55de9d8f611a43-105c56f7d98f64376d84",
+              "file": "tests/ui/specs/login.spec.ts",
+              "line": 31,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\profile-api-interception.spec.ts",
+      "file": "tests/ui/specs/profile-api-interception.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Profile - API Interception",
+          "file": "tests/ui/specs/profile-api-interception.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Sort books",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "failed",
+                      "duration": 60036,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Learning JavaScript Design Patterns\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.rt-tbody .rt-tr-group .rt-td:nth-child(2) a').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Learning JavaScript Design Patterns\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.rt-tbody .rt-tr-group .rt-td:nth-child(2) a').first()\u001b[22m\n\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\utils\\zones.js:75:33)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:216:32)\n    at SearchPage.checkSort (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\profile-page.ts:59:44)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\tests\\ui\\specs\\profile-api-interception.spec.ts:18:27)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:345:9)\n    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:341:7)",
+                        "location": {
+                          "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\profile-page.ts",
+                          "column": 44,
+                          "line": 59
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mtests\\ui\\pages\\profile-page.ts:59\n\n  57 |\n  58 |   async checkSort() {\n> 59 |     await expect(this.booksInGrid.first()).toContainText(bookListData.books[1].title);\n     |                                            ^\n  60 |     await expect(this.booksInGrid.nth(1)).toContainText(bookListData.books[0].title);\n  61 |   }\n  62 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\profile-page.ts",
+                            "column": 44,
+                            "line": 59
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Learning JavaScript Design Patterns\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.rt-tbody .rt-tr-group .rt-td:nth-child(2) a').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests\\ui\\pages\\profile-page.ts:59\n\n  57 |\n  58 |   async checkSort() {\n> 59 |     await expect(this.booksInGrid.first()).toContainText(bookListData.books[1].title);\n     |                                            ^\n  60 |     await expect(this.booksInGrid.nth(1)).toContainText(bookListData.books[0].title);\n  61 |   }\n  62 |\n\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\playwright-core\\lib\\utils\\zones.js:75:33)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:216:32)\u001b[22m\n\u001b[2m    at SearchPage.checkSort (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\profile-page.ts:59:44)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\tests\\ui\\specs\\profile-api-interception.spec.ts:18:27)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:345:9)\u001b[22m\n\u001b[2m    at C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\1)\\tau-advanced-playwright-main\\node_modules\\@playwright\\test\\lib\\worker\\workerMain.js:341:7)\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTest finished within timeout of 60000ms, but tearing down \"trace recording\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:32:49.984Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-profile-api-interception-Profile---API-Interception-Sort-books-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\tests\\ui\\pages\\profile-page.ts",
+                        "column": 44,
+                        "line": 59
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5914958aaf60d5ce2963-5651deaca4bf0d2173de",
+              "file": "tests/ui/specs/profile-api-interception.spec.ts",
+              "line": 14,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\profile-stored-authentication.spec.ts",
+      "file": "tests/ui/specs/profile-stored-authentication.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Profile - Stored Auth",
+          "file": "tests/ui/specs/profile-stored-authentication.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Check logged in",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 30956,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:33:53.362Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-profile-stored-authentication-Profile---Stored-Auth-Check-logged-in-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6addb5cc48603e811d3f-0d9ecc920bea035e7236",
+              "file": "tests/ui/specs/profile-stored-authentication.spec.ts",
+              "line": 13,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\profile-with-dynamic-pom.spec.ts",
+      "file": "tests/ui/specs/profile-with-dynamic-pom.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Profile - Dynamic Page Object Model",
+          "file": "tests/ui/specs/profile-with-dynamic-pom.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Check logged in",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 28258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:34:17.232Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\SKYLINE\\Downloads\\tau-advanced-playwright-main (1)\\tau-advanced-playwright-main\\test-results\\tests-ui-specs-profile-with-dynamic-pom-Profile---Dynamic-Page-Object-Model-Check-logged-in-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab47612b7279c2874e07-ddc3535a8b9e0c2285b3",
+              "file": "tests/ui/specs/profile-with-dynamic-pom.spec.ts",
+              "line": 15,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\ui\\specs\\visual-regression.spec.ts",
+      "file": "tests/ui/specs/visual-regression.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Regression",
+          "file": "tests/ui/specs/visual-regression.spec.ts",
+          "line": 61,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Profile Page and Swagger Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-13T17:34:30.883Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4c1056ae45e0fe4b27b0-0532d8b5c952fd89fcf8",
+              "file": "tests/ui/specs/visual-regression.spec.ts",
+              "line": 63,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

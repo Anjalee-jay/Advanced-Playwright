@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "playwright-ui-chromium",
+			"type": "shell",
+			"command": "npx playwright test tests/ui/specs/ --project=chromium --reporter=line",
+			"isBackground": false
+		}
+	]
+}
